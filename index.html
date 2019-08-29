@@ -9,9 +9,14 @@
   	color: white;
     margin-left: 45px;
     font-family: Tahoma, Geneva, sans-serif;
+
   } 
-  p {
-  	color: red;
+  button {
+  	width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 15px;
   }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -22,19 +27,23 @@ $(document).ready(function(){
     $('textarea#mytextarea').val("Eric Chen"); 
   });
 });
+
+$("#mytextarea").on("keydown", function(e){
+  if(e.which == 13){
+    alert('hi');
+    return false;
+  }
+});
 </script>
 </head>
 <body>
 <h1> IG Line Break </h1>
-<table>
-	<tr>
-    	<td>
-        <button id="copy" class="ui-button ui-widget ui-corner-all">Copy</button>
-        <button id="clear" class="ui-button ui-widget ui-corner-all">Clear</button>
-        <button id="instagram" class="ui-button ui-widget ui-corner-all">Instagram</button>
-        </td>
-    </tr>
-</table>
+<div class="btn group">
+     <button id="copy" class="ui-button ui-widget ui-corner-all">Copy</button>
+     <button id="clear" class="ui-button ui-widget ui-corner-all">Clear</button>
+     <button id="instagram" class="ui-button ui-widget ui-corner-all">Instagram</button>
+</div>
+<div style="height: 5px"></div>
 <textarea id="mytextarea" rows="30" cols="40">
 
 </textarea>
