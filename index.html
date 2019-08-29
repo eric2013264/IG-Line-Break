@@ -5,17 +5,18 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("input:text").val("Eric Chen");
+    $('textarea#mytextarea').val("Eric Chen"); 
   });
 });
 </script>
 </head>
 <body>
 
-<p>Name: <textarea rows="4" cols="50"> </textarea></p>
+<p>Name: <textarea id="mytextarea" rows="4" cols="50">
+MySQL was developed by Michael Widenius and David Axmark in 1994. Presently MySQL is maintained by Oracle (formerly Sun, formerly MySQL AB). 
+</textarea></p>
 
 <button>Set the value of the input field</button>
 
 </body>
 </html>
-
