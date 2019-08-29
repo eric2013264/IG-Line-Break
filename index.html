@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+  body {background-color: black;
+}
+  h1   {
+  		color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        }
+ 
+  p    {color: red;}
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
+
 $(document).ready(function(){
-  $("button").click(function(){
+  $("button#clear").click(function(){
     $('textarea#mytextarea').val("Eric Chen"); 
   });
 });
 </script>
 </head>
 <body>
+<h1> IG Line Break </h1>
+<table>
+	<tr>
+    	<td>
+        <button id="copy" class="ui-button ui-widget ui-corner-all">Copy</button>
+        <button id="clear" class="ui-button ui-widget ui-corner-all">Clear</button>
+        <button id="instagram" class="ui-button ui-widget ui-corner-all">Instagram</button>
+        </td>
+    </tr>
+</table>
+<textarea id="mytextarea" rows="30" cols="40">
 
-<p>Name: <textarea id="mytextarea" rows="4" cols="50">
-MySQL was developed by Michael Widenius and David Axmark in 1994. Presently MySQL is maintained by Oracle (formerly Sun, formerly MySQL AB). 
-</textarea></p>
-
-<button>Set the value of the input field</button>
+</textarea>
 
 </body>
 </html>
+
