@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=3.0, maximum-scale=3.0, minimum-scale=0.86">
 <head>
 <style>
   body {
@@ -42,11 +43,10 @@
    || navigator.userAgent.match(/BlackBerry/i)
    || navigator.userAgent.match(/Windows Phone/i)
    ){
-   	  document.getElementById('mytextarea').width = window.innerWidth - 20;
+      document.getElementById('mytextarea').width = window.innerWidth - 20;
     }
    else {
     }
-}
   
 function insertAtCursor(myField, myValue) {
     //IE support
@@ -119,4 +119,3 @@ $(document).ready(function(){
 
 </body>
 </html>
-
