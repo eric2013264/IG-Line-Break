@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width">
 <head>
 <style>
   body {
-    background-color: black;
+  	background-color: black;
   }
   h1 {
-    color: white;
+  	color: white;
     margin-left: 45px;
     font-family: Tahoma, Geneva, sans-serif;
-
   } 
   button {
+    color: white;
+    border-color: white;
+    background-color: black;
   	width: 100px;
     height: 40px;
     border-radius: 12px;
-    color: white;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 15px;
-    background-color: black;
   }
-  textarea {
-    width: 400px;
+  .name {
+  	position: relative;
+    left: 1px;
+  	margin-top: -5px;
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 9px;
   }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-
-$(document).ready(function(){
-    /*
-    var windowWidth = window.innerWidth
-    $('#mytextarea').width(windowWidth - 40);
-    $(window).resize(function() {
-    	windowWidth = window.innerWidth - 40;
-    	$('#mytextarea').width(windowWidth)
-    })
-    */
-  $("button#clear").click(function(){
-    $('textarea#mytextarea').val("Eric Chen"); 
-  	});
-  });
-
-  $("textarea#mytextarea").on("keydown", function(e){
-    if(e.which == 13){
-      alert('hi');
-      return false;
+function insertAtCursor(myField, myValue) {
+    //IE support
+    if (document.selection) {
+        myField.focus();
+        sel = document.selection.createRange();
+        sel.text = myValue;
     }
+    //MOZILLA and others
+    else if (myField.selectionStart || myField.selectionStart == '0') {
+        var startPos = myField.selectionStart;
+        var endPos = myField.selectionEnd;
+        myField.value = myField.value.substring(0, startPos)
+            + myValue
+            + myField.value.substring(endPos, myField.value.length);
+        myField.selectionStart = startPos + myValue.length;
+        myField.selectionEnd = startPos + myValue.length;
+    } else {
+        myField.value += myValue;
+    }
+}
+$(document).ready(function(){
+  // Instagram button click
+  $("button#instagram").click(function(){
+    alert("In Progress");
+  });
+  // Copy button click
+  $("button#copy").click(function(){
+    var copyTextarea = document.getElementById('mytextarea');
+    copyTextarea.focus();
+    copyTextarea.select();
+    try {
+      var successful = document.execCommand('copy');
+      var msg = successful ? 'successful' : 'unsuccessful';
+      alert('Copied to Clipboard.');
+    } catch (err) {
+      alert('Oops, unable to copy');
+    }
+  });
+  // Clear button click
+  $("button#clear").click(function(){
+    $('textarea#mytextarea').val(""); 
+  });
+  // Textarea keydown
+  $("#mytextarea").keydown(function(e) {
+    if (e.which == 13) {
+        //var out = getCaretPosition(document.getElementById('mytextarea'));
+        var blankSpace = '\u2063';
+        insertAtCursor(document.getElementById('mytextarea'), blankSpace);
+        //alert(out.start);
+    }
+  });
 });
 </script>
 </head>
@@ -59,9 +94,8 @@ $(document).ready(function(){
 </div>
 <div style="height: 5px"></div>
 <textarea id="mytextarea" rows="30" cols="40">
-
 </textarea>
+<p class="name">Created by Eric Chen</p>
 
 </body>
 </html>
-
