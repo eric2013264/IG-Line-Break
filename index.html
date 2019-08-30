@@ -35,22 +35,23 @@
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
+  
   detectmob();
   
   function detectmob() { 
-   if( navigator.userAgent.match(/Android/i)
-   || navigator.userAgent.match(/webOS/i)
-   || navigator.userAgent.match(/iPhone/i)
-   || navigator.userAgent.match(/iPad/i)
-   || navigator.userAgent.match(/iPod/i)
-   || navigator.userAgent.match(/BlackBerry/i)
-   || navigator.userAgent.match(/Windows Phone/i)
-   ){
-      alert("mobile detected");
-      document.getElementById('mytextarea').width = window.innerwidth - 10;
-    }
-   else {
-    }
+     if( navigator.userAgent.match(/Android/i)
+     || navigator.userAgent.match(/webOS/i)
+     || navigator.userAgent.match(/iPhone/i)
+     || navigator.userAgent.match(/iPad/i)
+     || navigator.userAgent.match(/iPod/i)
+     || navigator.userAgent.match(/BlackBerry/i)
+     || navigator.userAgent.match(/Windows Phone/i)
+     ){
+        document.getElementById('mytextarea').width = window.innerwidth - 10;
+      }
+     else {
+      }
+   }
   
 function insertAtCursor(myField, myValue) {
     //IE support
@@ -105,6 +106,7 @@ $(document).ready(function(){
   });
 });
 
+  
 </script>
 </head>
 <body>
@@ -120,3 +122,4 @@ $(document).ready(function(){
 
 </body>
 </html>
+
