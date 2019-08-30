@@ -15,7 +15,7 @@
     color: white;
     border-color: white;
     background-color: black;
-  	width: auto;
+  	width: 50px;
     height: 40px;
     border-radius: 12px;
     font-family: Tahoma, Geneva, sans-serif;
@@ -74,9 +74,11 @@ function insertAtCursor(myField, myValue) {
 }
 
 $(document).ready(function(){
-  
+  $("button#copy").width(window.innerwidth/3);
+  $("button#clear").width(window.innerwidth/3);
   // Copy button click
   $("button#copy").click(function(){
+    alert("runninng");
     var copyTextarea = document.getElementById('mytextarea');
     copyTextarea.focus();
     copyTextarea.select();
