@@ -3,16 +3,16 @@
 <head>
 <style>
   body {
-  	background-color: black;
+    background-color: black;
   }
   h1 {
-  	color: white;
+    color: white;
     margin-left: 45px;
     font-family: Tahoma, Geneva, sans-serif;
 
   } 
   button {
-  	width: 100px;
+    width: 100px;
     height: 40px;
     border-radius: 12px;
     font-family: Tahoma, Geneva, sans-serif;
@@ -23,8 +23,8 @@
 <script>
 
 $(document).ready(function(){
-	var windowWidth = window.innerWidth
-    $('#mytextarea').width(windowWidth) - 40;
+    var windowWidth = window.innerWidth
+    $('#mytextarea').width(windowWidth - 40);
     $(window).resize(function() {
     	windowWidth = window.innerWidth - 40;
     	$('#mytextarea').width(windowWidth)
