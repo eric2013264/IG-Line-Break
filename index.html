@@ -31,17 +31,7 @@
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-  alert(detectmob1());
-  alert(detectmob());
-  function detectmob1() {
-   if(window.innerWidth <= 800 && window.innerHeight <= 600) {
-     alert(window.innerWidth);
-     return true;
-   } else {
-     alert(window.innerHeight);
-     return false;
-   }
-  }
+  detectmob();
   
   function detectmob() { 
    if( navigator.userAgent.match(/Android/i)
@@ -52,10 +42,9 @@
    || navigator.userAgent.match(/BlackBerry/i)
    || navigator.userAgent.match(/Windows Phone/i)
    ){
-      return true;
+   	  document.getElementById('mytextarea').width = window.innerWidth - 20;
     }
    else {
-      return false;
     }
 }
   
@@ -130,3 +119,4 @@ $(document).ready(function(){
 
 </body>
 </html>
+
