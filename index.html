@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.86">
+<meta name="viewport" content="width=device-width, initial-scale=1.2, maximum-scale=3.0, minimum-scale=0.86">
 <head>
 <style>
   body {
@@ -46,10 +46,8 @@
    || navigator.userAgent.match(/BlackBerry/i)
    || navigator.userAgent.match(/Windows Phone/i)
    ){
+      alert("mobile detected");
       document.getElementById('mytextarea').width = window.innerwidth;
-      document.getElementById('copy').width = window.innerwidth/3;
-      document.getElementById('clear').width = window.innerwidth/3;
-      document.getElementById('instagram').width = window.innerwidth/3;
     }
    else {
     }
