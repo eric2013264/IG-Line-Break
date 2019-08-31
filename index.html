@@ -75,11 +75,10 @@ function insertAtCursor(myField, myValue) {
 }
 
 $(document).ready(function(){
-  $("button#copy").width(window.innerwidth/3);
-  $("button#clear").width(window.innerwidth/3);
+  $("button#copy").width(window.innerwidth/2);
+  $("button#clear").width(window.innerwidth/2);
   // Copy button click
   $("button#copy").click(function(){
-    alert("runninng");
     var copyTextarea = document.getElementById('mytextarea');
     copyTextarea.focus();
     copyTextarea.select();
