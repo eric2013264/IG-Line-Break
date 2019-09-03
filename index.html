@@ -76,10 +76,10 @@ function insertAtCursor(myField, myValue) {
 }
 
 $(document).ready(function(){
-  $("#copy").width($("#mytextarea").width()/2)-20 + "px";
-  $("#clear").width($("#mytextarea").width()/2)-20 + "px";
+  $("#copy").width($("#mytextarea").width()/2)-40 + "px";
+  $("#clear").width($("#mytextarea").width()/2)-40 + "px";
   if (detectmob() == true) {
-  	$("#mytextarea").width(window.innerWidth - 20) + "px";
+  	$("#mytextarea").width(window.innerWidth) + "px";
   } else {
     $("#mytextarea").width(window.innerWidth - 100) + "px";
   }
