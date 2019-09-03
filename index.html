@@ -52,13 +52,13 @@ function insertAtCursor(myField, myValue) {
 $(document).ready(function(){
 
   if (detectmob() == true) {
-  	$("#mytextarea").width(window.innerWidth-20) + "px";
+  	$("#mytextarea").width(window.innerWidth-15) + "px";
   	$("#copy").width($("#mytextarea").width()/2-10) + "px";
   	$("#clear").width($("#mytextarea").width()/2-10) + "px";
   } else {
 	$("#mytextarea").width(300) + "px";
-	$("#copy").width($("#mytextarea").width()/2-5) + "px";
-	$("#clear").width($("#mytextarea").width()/2-5) + "px";
+	$("#copy").width($("#mytextarea").width()/2-20) + "px";
+	$("#clear").width($("#mytextarea").width()/2-20) + "px";
   }
 
   // Copy button click
