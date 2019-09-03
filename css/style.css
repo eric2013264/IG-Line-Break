@@ -23,9 +23,8 @@ textarea {
     width: 300px;
 }
 
-.center {
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
