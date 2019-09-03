@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.1, maximum-scale=3.0, minimum-scale=0.86">
+<meta name="viewport" content="width=device-width, initial-scale=1.1, maximum-scale=3.0, minimum-scale=1.1">
 <head>
 
 <!-- Scripts -->
@@ -49,7 +49,7 @@ function insertAtCursor(myField, myValue) {
 $(document).ready(function(){
 
   if (detectmob() == true) {
-    $("#mytextarea").width(window.innerWidth-15) + "px";
+    $("#mytextarea").width(window.innerWidth-17) + "px";
     $("#copy").width($("#mytextarea").width()/2-10) + "px";
     $("#clear").width($("#mytextarea").width()/2-10) + "px";
   } else {
