@@ -50,8 +50,8 @@ $(document).ready(function(){
 
   if (detectmob() == true) {
     $("#mytextarea").width(window.innerWidth-17) + "px";
-    $("#copy").width($("#mytextarea").width()/2-10) + "px";
-    $("#clear").width($("#mytextarea").width()/2-10) + "px";
+    $("#copy").width($("#mytextarea").width()/2-15) + "px";
+    $("#clear").width($("#mytextarea").width()/2-15) + "px";
   } else {
   $("#mytextarea").width(300) + "px";
   $("#copy").width($("#mytextarea").width()/2-20) + "px";
@@ -96,5 +96,6 @@ $(document).ready(function(){
     </div>
     <div style="height: 5px"></div>
     <textarea id="mytextarea" rows="30" cols="40"></textarea>
+    <div style="height: 5px"></div>
     <p class="name">Created by Eric Chen -- Version 1.0.0.0.0.0.2</p>
 </body>
