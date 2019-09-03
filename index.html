@@ -61,8 +61,6 @@ $(document).ready(function(){
   // Copy button click
   $("button#copy").click(function(){
     var copyTextarea = document.getElementById('mytextarea');
-    copyTextarea.focus();
-    copyTextarea.select();
     try {
       var successful = document.execCommand('copy');
       var msg = successful ? 'successful' : 'unsuccessful';
