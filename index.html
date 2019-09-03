@@ -76,8 +76,8 @@ function insertAtCursor(myField, myValue) {
 }
 
 $(document).ready(function(){
-  $("#copy").width($("#mytextarea").width()/2) + "px";
-  $("#clear").width($("#mytextarea").width()/2) + "px";
+  $("#copy").width($("#mytextarea").width()/2-5) + "px";
+  $("#clear").width($("#mytextarea").width()/2-5) + "px";
   if (detectmob() == true) {
   	$("#mytextarea").width(window.innerWidth) + "px";
 	$("#mytextarea").width(window.innerHeight) + "px";
