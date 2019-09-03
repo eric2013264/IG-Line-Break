@@ -32,8 +32,6 @@ img {
 }
 
 .content {
-  max-width: 500px;
-  margin: auto;
-  background: white;
-  padding: 10px;
+  position: relative;
+  text-align:center;
 }
