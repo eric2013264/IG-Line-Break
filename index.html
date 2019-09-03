@@ -80,6 +80,8 @@ $(document).ready(function(){
   $("#clear").width($("#mytextarea").width()/2) + "px";
   if (detectmob() == true) {
   	$("#mytextarea").width(window.innerWidth) + "px";
+	$("#mytextarea").width(window.innerHeight) + "px";
+
   } else {
     $("#mytextarea").width(window.innerWidth - 100) + "px";
   }
