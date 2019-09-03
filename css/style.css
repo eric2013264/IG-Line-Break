@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+h1 {
+    color: white;
+    margin-left: 45px;
+    font-family: Tahoma, Geneva, sans-serif;
+} 
+button {
+    color: white;
+    border-color: white;
+    background-color: black;
+    width: 70px;
+    height: 40px;
+    border-radius: 12px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 15px;
+}
+.name {
+    position: relative;
+    left: 1px;
+    margin-top: -5px;
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 9px;
+}
+textarea {
+    width: 300px;
+}
