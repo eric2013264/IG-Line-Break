@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.1, maximum-scale=3.0, minimum-scale=0.86">
 <head>
 
@@ -7,25 +7,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <link href="css/style.css" type="text/css" rel="stylesheet">
-
-
 <script>
-
   
 function detectmob() { 
-	if( navigator.userAgent.match(/Android/i)
-	|| navigator.userAgent.match(/webOS/i)
-	|| navigator.userAgent.match(/iPhone/i)
-	|| navigator.userAgent.match(/iPad/i)
-	|| navigator.userAgent.match(/iPod/i)
-	|| navigator.userAgent.match(/BlackBerry/i)
-	|| navigator.userAgent.match(/Windows Phone/i))
-	{
-		return true;
-	}
-	else {
-		return false;
-	}
+  if( navigator.userAgent.match(/Android/i)
+  || navigator.userAgent.match(/webOS/i)
+  || navigator.userAgent.match(/iPhone/i)
+  || navigator.userAgent.match(/iPad/i)
+  || navigator.userAgent.match(/iPod/i)
+  || navigator.userAgent.match(/BlackBerry/i)
+  || navigator.userAgent.match(/Windows Phone/i))
+  {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 function insertAtCursor(myField, myValue) {
@@ -52,13 +49,13 @@ function insertAtCursor(myField, myValue) {
 $(document).ready(function(){
 
   if (detectmob() == true) {
-  	$("#mytextarea").width(window.innerWidth-15) + "px";
-  	$("#copy").width($("#mytextarea").width()/2-10) + "px";
-  	$("#clear").width($("#mytextarea").width()/2-10) + "px";
+    $("#mytextarea").width(window.innerWidth-15) + "px";
+    $("#copy").width($("#mytextarea").width()/2-10) + "px";
+    $("#clear").width($("#mytextarea").width()/2-10) + "px";
   } else {
-	$("#mytextarea").width(300) + "px";
-	$("#copy").width($("#mytextarea").width()/2-20) + "px";
-	$("#clear").width($("#mytextarea").width()/2-20) + "px";
+  $("#mytextarea").width(300) + "px";
+  $("#copy").width($("#mytextarea").width()/2-20) + "px";
+  $("#clear").width($("#mytextarea").width()/2-20) + "px";
   }
 
   // Copy button click
@@ -88,21 +85,18 @@ $(document).ready(function(){
     }
   });
 });
-
   
 </script>
-	
+  
+<!-- Content -->
 <img src="images/logo.png" height="40px">
 </head>
 <body>
-<div class="btn group">
-     <button id="copy" class="ui-button ui-widget ui-corner-all">Copy</button>
-     <button id="clear" class="ui-button ui-widget ui-corner-all">Clear</button>
-</div>
-<div style="height: 5px"></div>
-<textarea id="mytextarea" rows="30" cols="40">
-</textarea>
-<p class="name">Created by Eric Chen -- Version 1.0.0.0.0.0.2</p>
-
+    <div class="btn group">
+         <button id="copy" class="ui-button ui-widget ui-corner-all">Copy</button>
+         <button id="clear" class="ui-button ui-widget ui-corner-all">Clear</button>
+    </div>
+    <div style="height: 5px"></div>
+    <textarea id="mytextarea" rows="30" cols="40"></textarea>
+    <p class="name">Created by Eric Chen -- Version 1.0.0.0.0.0.2</p>
 </body>
-</html>
