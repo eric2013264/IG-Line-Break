@@ -25,6 +25,7 @@ function detectmob() {
 		return true;
 	}
 	else {
+		alert('Desktop detected');
 		return false;
 	}
 }
@@ -54,8 +55,8 @@ $(document).ready(function(){
   $("#copy").width($("#mytextarea").width()/2-5) + "px";
   $("#clear").width($("#mytextarea").width()/2-5) + "px";
   if (detectmob() == true) {
-  	$("#mytextarea").width(window.innerWidth) + "px";
-	$("#mytextarea").width(window.innerHeight) + "px";
+  	$("#mytextarea").width(window.innerWidth-10) + "px";
+	$("#mytextarea").width(window.innerHeight-40) + "px";
 
   } else {
     $("#mytextarea").width(400) + "px";
