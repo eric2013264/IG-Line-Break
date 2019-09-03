@@ -35,8 +35,7 @@
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-/*
-  detectmob();
+
   
   function detectmob() { 
      if( navigator.userAgent.match(/Android/i)
@@ -47,12 +46,13 @@
      || navigator.userAgent.match(/BlackBerry/i)
      || navigator.userAgent.match(/Windows Phone/i)
      ){
-        document.getElementById('mytextarea').width = window.innerwidth - 10;
-      }
+		return true;
+	}
      else {
+  		return false;
       }
    }
- */
+
 function insertAtCursor(myField, myValue) {
     //IE support
     if (document.selection) {
@@ -75,9 +75,14 @@ function insertAtCursor(myField, myValue) {
 }
 
 $(document).ready(function(){
-  //$("button#copy").width(window.innerwidth/2);
-  //$("button#clear").width(window.innerwidth/2);
-  
+  $("#copy").width($("#mytextarea").width()/2) + "px";
+  $("#clear").width($("#mytextarea").width()/2) + "px";
+  if (detectmob() == true) {
+  	$("#mytextarea").width(window.innerWidth - 50) + "px";
+  } else {
+    $("#mytextarea").width(window.innerWidth - 100) + "px";
+  }
+
   // Copy button click
   $("button#copy").click(function(){
     var copyTextarea = document.getElementById('mytextarea');
@@ -118,7 +123,7 @@ $(document).ready(function(){
 <div style="height: 5px"></div>
 <textarea id="mytextarea" rows="30" cols="40">
 </textarea>
-<p class="name">Created by Eric Chen -- Version 1.0</p>
+<p class="name">Created by Eric Chen -- Version 1.0.0.0.0.0.1</p>
 
 </body>
 </html>
