@@ -31,6 +31,10 @@ img {
   margin-right: auto;
 }
 
+p {
+    color: white;
+}
+
 .content {
   position: relative;
   text-align:center;
