@@ -1,10 +1,8 @@
 function detectmob() { 
   if( navigator.userAgent.match(/Android/i)
-  || navigator.userAgent.match(/webOS/i)
   || navigator.userAgent.match(/iPhone/i)
   || navigator.userAgent.match(/iPad/i)
   || navigator.userAgent.match(/iPod/i)
-  || navigator.userAgent.match(/BlackBerry/i)
   || navigator.userAgent.match(/Windows Phone/i))
   {
     return true;
@@ -44,8 +42,8 @@ $(document).ready(function(){
     $("#clear").width($("#mytextarea").width()/2-30) + "px";
   } else {
     $("#mytextarea").width(300) + "px";
-    $("#copy").width($("#mytextarea").width()/2-17) + "px";
-    $("#clear").width($("#mytextarea").width()/2-17) + "px";
+    $("#copy").width($("#mytextarea").width()/2-16) + "px";
+    $("#clear").width($("#mytextarea").width()/2-16) + "px";
   }
 
   // Copy button click
