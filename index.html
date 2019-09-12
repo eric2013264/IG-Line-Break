@@ -7,7 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <link href="css/style.css" type="text/css" rel="stylesheet">
-<link rel="apple-touch-icon" href="images/icon.png">
+<link rel="apple-touch-icon" href="images/icon.jpg">
 <script>
 function detectmob() { 
   if( navigator.userAgent.match(/Android/i)
@@ -46,7 +46,8 @@ function insertAtCursor(myField, myValue) {
     }
 }
 $(document).ready(function(){
-  /*
+  
+ 
   if (detectmob() == true) {
     $("#mytextarea").width(window.innerWidth-27) + "px";
     $("#copy").width($("#mytextarea").width()/2-30) + "px";
@@ -56,7 +57,7 @@ $(document).ready(function(){
     $("#copy").width($("#mytextarea").width()/2-15) + "px";
     $("#clear").width($("#mytextarea").width()/2-15) + "px";
   }
-  */
+  
   // Copy button click
   $("button#copy").click(function(){
     var copyTextarea = document.getElementById('mytextarea');
@@ -93,14 +94,12 @@ $(document).ready(function(){
 
 </head>
 <body>
-	<div class="content">
-      <div class="btn group">
-           <button id="copy" class="ui-button ui-widget ui-corner-all">Copy</button>
-           <button id="clear" class="ui-button ui-widget ui-corner-all">Clear</button>
+      <div class="content">
+	      <div class="btn group">
+		   <button id="copy" class="ui-button ui-widget ui-corner-all">Copy</button>
+		   <button id="clear" class="ui-button ui-widget ui-corner-all">Clear</button>
+	      </div>
+       		<textarea id="mytextarea" rows="30" cols="40"></textarea>
       </div>
-      <div style="height: 5px"></div>
-      <textarea id="mytextarea" rows="30" cols="40"></textarea>
-      <div style="height: 5px"></div>
-  </div>
 </body>
-<p>woo</p>
+<p style="color:white;">woo</p>
