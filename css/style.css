@@ -34,6 +34,8 @@ img {
 p {
     color: white;
     font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10px;
+    margin-top: -5px;
 }
 
 .content {
