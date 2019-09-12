@@ -46,8 +46,7 @@ function insertAtCursor(myField, myValue) {
     }
 }
 $(document).ready(function(){
-  
- 
+
   if (detectmob() == true) {
     $("#mytextarea").width(window.innerWidth-27) + "px";
     $("#copy").width($("#mytextarea").width()/2-30) + "px";
@@ -57,7 +56,7 @@ $(document).ready(function(){
     $("#copy").width($("#mytextarea").width()/2-15) + "px";
     $("#clear").width($("#mytextarea").width()/2-15) + "px";
   }
-  
+
   // Copy button click
   $("button#copy").click(function(){
     var copyTextarea = document.getElementById('mytextarea');
