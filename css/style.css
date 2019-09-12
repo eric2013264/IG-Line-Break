@@ -38,6 +38,11 @@ p {
     margin-top: -5px;
 }
 
+a {
+    position: absolute;
+    right: 8px;
+    top: 10px">
+}
 .content {
   position: relative;
   text-align:center;
