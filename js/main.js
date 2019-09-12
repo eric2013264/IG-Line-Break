@@ -34,16 +34,18 @@ function insertAtCursor(myField, myValue) {
         myField.value += myValue;
     }
 }
+
 $(document).ready(function(){
 
+  // Scale the elements according to screen size
   if (detectmob() == true) {
     $("#mytextarea").width(window.innerWidth-27) + "px";
     $("#copy").width($("#mytextarea").width()/2-30) + "px";
     $("#clear").width($("#mytextarea").width()/2-30) + "px";
   } else {
     $("#mytextarea").width(300) + "px";
-    $("#copy").width($("#mytextarea").width()/2-15) + "px";
-    $("#clear").width($("#mytextarea").width()/2-15) + "px";
+    $("#copy").width($("#mytextarea").width()/2-17) + "px";
+    $("#clear").width($("#mytextarea").width()/2-17) + "px";
   }
 
   // Copy button click
