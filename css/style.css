@@ -26,9 +26,9 @@ textarea {
 }
 
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p {
@@ -45,16 +45,14 @@ p {
 }
 
 .content {
-  position: relative;
-  text-align:center;
+    position: relative;
+    text-align:center;
 }
 
 .icon {
-  height: 30px;
+    height: 30px;
 }
 
 .invert {
-  filter: invert(1);
+    filter: invert(1);
 }
-
-
