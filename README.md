@@ -10,3 +10,6 @@ A formatting tool for Instagram captions. Instagram doesn't preserve the nextlin
 
 #### Usage:
 Simply hit return where you want a next line and then copy and paste to Instagram. 
+
+#### Bookmark/Add to home screen:
+![Add to home screen](https://raw.githubusercontent.com/eric2013264/IG-Line-Break/master/images/iOSAddToHomescreen.png)
