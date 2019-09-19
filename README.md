@@ -1,6 +1,4 @@
-# [IG Line Break](https://eric2013264.github.io/IG-Line-Break)
-
-## Access the tool [here](https://eric2013264.github.io/IG-Line-Break)
+# [IG Line Break](https://eric2013264.github.io/IG-Line-Break) (<-- Access the tool here)
 
 ## Purpose: 
 A formatting tool for Instagram captions. Instagram doesn't preserve the nextline white space entered when the user hits the return key. This tool retains the nextline white space formatting intended by inserting a line break invisible separator (Unicode Character U+2063/Decimal 8291) when the return key is pressed.
