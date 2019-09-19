@@ -1,4 +1,4 @@
-# IG Line Break
+# [IG Line Break](https://eric2013264.github.io/IG-Line-Break)
 
 ## Access the tool [here](https://eric2013264.github.io/IG-Line-Break)
 
