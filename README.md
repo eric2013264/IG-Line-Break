@@ -12,4 +12,4 @@ Simply hit return where you want a next line and then copy and paste to Instagra
 &nbsp;
 ## Bookmark/Add to home screen
 Bookmark or add it to your homescreen to access it faster.
-![Add to home screen](https://raw.githubusercontent.com/eric2013264/IG-Line-Break/master/images/iOSAddToHomescreen.png)
+![Add to home screen](https://raw.githubusercontent.com/eric2013264/IG-Line-Break/master/images/iOS_Shortcut.png)
